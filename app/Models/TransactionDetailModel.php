@@ -9,6 +9,7 @@ class TransactionDetailModel extends Model
     protected $table = 'transaction_detail';
     protected $primaryKey = 'id';
     protected $allowedFields = [
-        'transaction_id', 'product_id', 'jumlah', 'diskon', 'subtotal_harga', 'created_at', 'updated_at'
+        'transaction_id', 'product_id', 'harga_asli', 'jumlah', 'diskon', 'subtotal_harga', 'created_at', 'updated_at'
     ];
+
 }

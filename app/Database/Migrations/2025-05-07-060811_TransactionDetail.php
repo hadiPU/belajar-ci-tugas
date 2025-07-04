@@ -25,6 +25,11 @@ class TransactionDetail extends Migration
                 'constraint' => 11,
                 'unsigned' => TRUE,
             ],
+            // ✅ Tambahkan harga_asli tanpa mengubah yang lain
+            'harga_asli' => [
+                'type' => 'DOUBLE',
+                'null' => TRUE,
+            ],
             'jumlah' => [
                 'type' => 'INT',
                 'constraint' => 5,

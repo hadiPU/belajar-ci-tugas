@@ -34,21 +34,19 @@ if (uri_string() != "") {
 
     <!-- Template Main CSS File -->
     <link href="<?php echo base_url() ?>NiceAdmin/assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Mar 09 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
+
+    <!-- ✅ Banner Diskon -->
+    <?php if (session()->get('diskon_nominal')): ?>
+        <div class="bg-success text-white text-center py-2 px-3 fw-bold" style="font-size: 15px;">
+            🎉 Hari ini ada diskon Rp <?= number_format(session()->get('diskon_nominal'), 0, ',', '.') ?> per item
+        </div>
+    <?php endif; ?>
+
     <main>
-
         <?= $this->renderSection('content') ?>
-
     </main><!-- End #main -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

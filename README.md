@@ -64,6 +64,9 @@ Proyek ini adalah platform toko online yang dibangun menggunakan [CodeIgniter 4]
    ```bash
    php spark db:seed UserSeeder
    ```
+   ```bash
+   php spark db:seed DiskonSeeder
+   ```
 6. **Jalankan server**
    ```bash
    php spark serve
@@ -75,15 +78,38 @@ Proyek ini adalah platform toko online yang dibangun menggunakan [CodeIgniter 4]
 
 Proyek menggunakan struktur MVC CodeIgniter 4:
 
-- app/Controllers - Logika aplikasi dan penanganan request
-  - AuthController.php - Autentikasi pengguna
-  - ProdukController.php - Manajemen produk
-  - TransaksiController.php - Proses transaksi
-- app/Models - Model untuk interaksi database
-  - ProductModel.php - Model produk
-  - UserModel.php - Model pengguna
-- app/Views - Template dan komponen UI
-  - v_produk.php - Tampilan produk
-  - v_keranjang.php - Halaman keranjang
-- public/img - Gambar produk dan aset
-- public/NiceAdmin - Template admin
+app/
+├── Controllers/
+│   ├── AuthController.php
+│   ├── DiskonController.php
+│   ├── ProdukController.php
+│   └── TransaksiController.php
+│
+├── Models/
+│   ├── UserModel.php
+│   ├── ProductModel.php
+│   ├── DiskonModel.php
+│   ├── TransactionModel.php
+│   └── TransactionDetailModel.php
+│
+├── Views/
+│   ├── layout/
+│   ├── produk/
+│   ├── diskon/
+│   ├── transaksi/
+│   └── v_checkout.php
+│       v_keranjang.php
+│
+├── Database/
+│   ├── Migrations/
+│   │   └── CreateDiskonTable.php
+│   └── Seeds/
+│       └── UserSeeder.php
+│           ProductSeeder.php
+│           DiskonSeeder.php
+│
+public/
+├── img/                 
+├── NiceAdmin/           
+├── dashboard/           
+

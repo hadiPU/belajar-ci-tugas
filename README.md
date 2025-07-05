@@ -76,38 +76,37 @@ Proyek ini adalah platform toko online yang dibangun menggunakan [CodeIgniter 4]
 
 ## Struktur Proyek
 
-Proyek menggunakan struktur MVC CodeIgniter 4:
+📁 app/Controllers/
+- AdminController.php
+- ApiController.php
+- AuthController.php
+- BaseController.php
+- DiskonController.php
+- Home.php
+- PageController.php
+- Product_CategoryController.php
+- ProdukController.php
+- TransaksiController.php
 
-app/
-├── Controllers/
-│   ├── AuthController.php
-│   ├── DiskonController.php
-│   ├── ProdukController.php
-│   └── TransaksiController.php
-│
-├── Models/
-│   ├── UserModel.php
-│   ├── ProductModel.php
-│   ├── DiskonModel.php
-│   ├── TransactionModel.php
-│   └── TransactionDetailModel.php
-│
-├── Views/
-│   ├── layout/
-│   ├── produk/
-│   ├── diskon/
-│   ├── admin/Transaksi/
-│   └── v_checkout.php
-│       v_keranjang.php
-│
-├── Database/
-│   ├── Migrations/
-│   │   
-│   └── Seeds/
-│      
-│
-public/
-├── img/                 
-├── NiceAdmin/           
-├── dashboard-toko/           
+📁 app/Database/
+- Migrations/
+- Seeds/
 
+📁 app/Models/
+- DiskonModel.php
+- ProductCategoryModel.php
+- ProductModel.php
+- TransactionDetailModel.php
+- TransactionModel.php
+- UserModel.php
+
+📁 app/Views/
+- admin/Transaksi/
+- components/
+- diskon/
+- errors/
+
+📁 public/
+- dashboard-toko/
+- img/
+- NiceAdmin/

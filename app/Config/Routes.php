@@ -56,7 +56,7 @@ $routes->resource('api', ['controller' => 'apiController']);
 $routes->get('diskon', 'DiskonController::index');
 $routes->post('diskon/store', 'DiskonController::store');
 $routes->post('diskon/update/(:num)', 'DiskonController::update/$1');
-$routes->post('diskon/delete/(:num)', 'DiskonController::delete/$1');
+$routes->get('diskon/delete/(:num)', 'DiskonController::delete/$1');
 
 
 

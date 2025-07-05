@@ -96,20 +96,18 @@ app/
 │   ├── layout/
 │   ├── produk/
 │   ├── diskon/
-│   ├── transaksi/
+│   ├── admin/Transaksi/
 │   └── v_checkout.php
 │       v_keranjang.php
 │
 ├── Database/
 │   ├── Migrations/
-│   │   └── CreateDiskonTable.php
+│   │   
 │   └── Seeds/
-│       └── UserSeeder.php
-│           ProductSeeder.php
-│           DiskonSeeder.php
+│      
 │
 public/
 ├── img/                 
 ├── NiceAdmin/           
-├── dashboard/           
+├── dashboard-toko/           
 
